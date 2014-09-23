@@ -11,5 +11,7 @@ and configure plugins.
 
 ## Try it
 
-_we should add a few screenshots here on how to use it_
+![screenshot](lib/labwiki/plugin/r/resource/img/screenshot.png)
+
+
 
