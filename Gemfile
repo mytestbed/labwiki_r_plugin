@@ -10,6 +10,6 @@ def override_with_local(opts)
 end
 
 #gem "rserve-client"
-gem "omf_oml", override_with_local(path: '../rserve_ruby_client', github: 'maxott/Rserve-Ruby-client') # branch => '2-3-stable'
+gem "rserve_client", override_with_local(path: '../rserve_ruby_client', github: 'maxott/Rserve-Ruby-client') # branch => '2-3-stable'
 
 
