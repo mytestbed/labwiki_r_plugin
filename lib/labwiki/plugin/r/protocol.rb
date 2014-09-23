@@ -1,4 +1,5 @@
 
+
 module LabWiki::Plugin::R
   class Protocol < OMF::Base::LObject
     include Rserve::Protocol
