@@ -1,0 +1,11 @@
+
+labwiki:
+  plugins:
+    r:
+      plugin_dir: labwiki_r_plugin
+
+  session:
+    default_plugins: # Create these plugins the first time a user logs in
+      # - column: execute
+        # plugin: 'r'
+        # action: 'on_new'
