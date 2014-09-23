@@ -32,7 +32,7 @@ def eval(cmd, session)
     puts ">> #{state}: #{res}"
     if state == :ok
       r = res.to_ruby
-      puts ">> RES: class: #{r['class']} type: #{r['type']} msg: #{r['msg']} svg: #{r['svg'].nil?.!}"
+      puts "RES: class: #{r['class']} type: #{r['type']} msg: #{r['msg']} svg: #{r['svg'].nil?.!}"
     end
   end
 end
@@ -40,7 +40,7 @@ end
 def run2(prompt = '>>')
   con = Rserve::Connection.new
   x = con.eval('x <- rnorm(1)')
-  p "#{prompt}-#{delay}: #{x}"
+  puts "#{prompt} #{x} -- #{x.to_ruby}"
 end
 
 def run_em
@@ -53,6 +53,6 @@ def run_em
   end
 end
 
-#run_em
-run2
+run_em
+#run2
 
